@@ -1,5 +1,5 @@
 import path from "path";
-import fs from "fs/promises";
+import { promises as fs } from "fs";
 import parseFrontMatter from "front-matter";
 import invariant from "tiny-invariant";
 
@@ -16,7 +16,7 @@ export function isValidPostAttributes(
 
 // Relative to the server output not the source!
 // i.e. netlify/functions/server/build/index.js
-export const programPath = path.join(__dirname, "../..", "program");
+export const programPath = path.join(__dirname, "../../", "program");
 console.log("programPath => ", programPath);
 export async function getAllaProgram() {
   const dir = await fs.readdir(programPath);
