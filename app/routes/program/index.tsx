@@ -1,11 +1,14 @@
+import { LoaderFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
-import type { Post } from "./allaProgram";
-import { getAllaProgram } from "./allaProgram";
 
-export const loader = getAllaProgram;
+import { getAllaProgram, Program } from "../../models/program.server";
+
+export const loader: LoaderFunction = async ({ params }) => {
+  return getAllaProgram();
+};
 
 export default function AllaProgram() {
-  const posts: Post[] = useLoaderData();
+  const posts: Program[] = useLoaderData();
 
   // Sort posts by latest date
   const sortedPosts = posts.sort((a, b) => {

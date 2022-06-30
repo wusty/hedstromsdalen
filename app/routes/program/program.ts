@@ -2,11 +2,14 @@ import path from "path";
 import fs from "fs/promises";
 import parseFrontMatter from "front-matter";
 import invariant from "tiny-invariant";
-import { programPath, isValidPostAttributes } from "./allaProgram";
 import { marked } from "marked";
-import type { Post } from "./allaProgram";
+import {
+  isValidPostAttributes,
+  Program,
+  programPath,
+} from "~/models/program.server";
 
-export async function createPost(post: Post) {
+export async function createPost(post: Program) {
   const md = `---\ntitle: ${post.title}\n---\n\n${post.markdown}`;
   await fs.writeFile(path.join(programPath, post.slug + ".md"), md);
   return getProgram(post.slug);
