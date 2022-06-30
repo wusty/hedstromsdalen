@@ -8,7 +8,7 @@ export const NavBarLink: FC<INavBarProps> = ({ name, to }) => {
   return (
     <Link
       to={to}
-      className={`mt-4 mr-4 block text-gray-200 last:mr-0 hover:text-white lg:mt-0 lg:inline-block ${
+      className={`mt-2 mb-2 mr-4 block text-gray-200 last:mr-0 hover:text-white lg:inline-block ${
         isCurrentPage && "font-bold"
       }`}
     >

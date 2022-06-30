@@ -1,8 +1,11 @@
 import { Link, useLocation, useParams } from "@remix-run/react";
+import { useState } from "react";
 import { LoginOrSignUp } from "~/components/LoginOrSignUp";
 import { NavBarLink } from "./NavBarLink";
 
 export const NavBar = () => {
+  // TODO: handle window resizing: reset collapse values
+  const [isCollapsed, setIsCollapsed] = useState(false);
   return (
     <nav className="flex flex-wrap items-center justify-between bg-gray-500 p-6">
       <div className="mr-6 flex flex-shrink-0 items-center text-white">
@@ -20,7 +23,10 @@ export const NavBar = () => {
         </Link>
       </div>
       <div className="block lg:hidden">
-        <button className="flex items-center rounded border border-gray-400 px-3 py-2 text-gray-200 hover:border-white hover:text-white">
+        <button
+          className="flex items-center rounded border border-gray-400 px-3 py-2 text-gray-200 hover:border-white hover:text-white"
+          onClick={() => setIsCollapsed(!isCollapsed)}
+        >
           <svg
             className="h-3 w-3 fill-current"
             viewBox="0 0 20 20"
@@ -31,15 +37,18 @@ export const NavBar = () => {
           </svg>
         </button>
       </div>
-      <div className="block w-full flex-grow lg:flex lg:w-auto lg:items-center">
-        <div className="text-sm lg:flex-grow ">
-          <NavBarLink name="Kontakt" to="/kontakt" />
-          <NavBarLink name="Program" to="/program" />
-          <NavBarLink name="Arkiv" to="/arkiv" />
-          <NavBarLink name="Misc." to="/misc" />
+      {isCollapsed === false && (
+        <div className="lg:pt-inherit block w-full flex-grow sm:flex sm:justify-between sm:pt-3 md:flex lg:flex lg:w-auto lg:items-center lg:pt-0">
+          <div className="flex flex-col justify-around text-sm sm:flex-row lg:flex-grow ">
+            <NavBarLink name="Kontakt" to="/kontakt" />
+            <NavBarLink name="Program" to="/program" />
+            <NavBarLink name="Arkiv" to="/arkiv" />
+            <NavBarLink name="Misc." to="/misc" />
+          </div>
+          {/* TODO: Add when we need login stuff */}
+          {/* <LoginOrSignUp /> */}
         </div>
-        <LoginOrSignUp />
-      </div>
+      )}
     </nav>
   );
 };

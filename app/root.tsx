@@ -14,6 +14,7 @@ import {
 } from "@remix-run/react";
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
+import baseStyles from "./styles/base.css";
 import { getUser } from "./session.server";
 import { NavBar } from "./components/NavBar";
 
@@ -22,7 +23,10 @@ export const meta: MetaFunction = () => {
 };
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: tailwindStylesheetUrl }];
+  return [
+    { rel: "stylesheet", href: tailwindStylesheetUrl },
+    { rel: "stylesheet", href: baseStyles },
+  ];
 };
 
 export const loader: LoaderFunction = async ({ request }) => {
