@@ -12,15 +12,16 @@ export function useMatchesData(id: string) {
   return route?.data;
 }
 
-export function isUser(user: User) {
+export function isUser(user: User): user is User {
   return user && typeof user === "object";
 }
 
-export function useOptionalUser() {
+export function useOptionalUser(): User | undefined {
   const data = useMatchesData("root");
   if (!data || !isUser(data.user)) {
     return undefined;
   }
+
   return data.user;
 }
 

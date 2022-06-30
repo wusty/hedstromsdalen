@@ -15,9 +15,10 @@ import {
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
+import { NavBar } from "./components/NavBar";
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return { title: "Hedströmsdalen" };
 };
 
 export const links: LinksFunction = () => {
@@ -40,7 +41,10 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
-        <Outlet />
+        <NavBar />
+        <div className="m-8">
+          <Outlet />
+        </div>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
