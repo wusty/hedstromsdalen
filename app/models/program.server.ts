@@ -37,10 +37,3 @@ export async function getAllaProgram() {
     })
   );
 }
-
-export type Program = {
-  slug: string;
-  title: string;
-  markdown: string;
-  date: Date;
-};

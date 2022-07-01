@@ -6,6 +6,6 @@ meta:
   title: Kontakt
 ---
 
-## {attributes.title}
+# {attributes.title}
 
 Uppdaterat {attributes.date.toLocaleDateString()}

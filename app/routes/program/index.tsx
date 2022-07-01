@@ -1,13 +1,43 @@
-import { LoaderFunction } from "@remix-run/node";
+import { json, LoaderFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 
-import { getAllaProgram, Program } from "../../models/program.server";
+import * as post1 from "./post-med-exempel.md";
+import * as post2 from "./why-capitalism-works.md";
+import * as post3 from "./capitalism-is-gret.md";
+import * as post4 from "./en-till-utstallning.md";
+// import * as postC from "./posts/c.md";
 
-export const loader: LoaderFunction = async ({ params }) => {
-  return getAllaProgram();
+export type Program = {
+  slug: string;
+  title: string;
+  markdown: string;
+  date: Date;
 };
 
-export default function AllaProgram() {
+function postFromModule(mod: any) {
+  return {
+    slug: mod.filename.replace(/\.md$/, ""),
+    title: mod.attributes.title,
+    date: mod.attributes.date,
+  };
+}
+
+export const loader: LoaderFunction = async ({ params }) => {
+  // Return metadata about each of the posts for display on the index page.
+  // Referencing the posts here instead of in the Index component down below
+  // lets us avoid bundling the actual posts themselves in the bundle for the
+  // index page.
+  const allPosts = [
+    postFromModule(post1),
+    postFromModule(post2),
+    postFromModule(post3),
+    postFromModule(post4),
+  ];
+  console.log("allPosts => ", allPosts);
+  return json(allPosts);
+};
+
+export default function Index() {
   const posts: Program[] = useLoaderData();
 
   // Sort posts by latest date
@@ -22,10 +52,8 @@ export default function AllaProgram() {
       <h1>Program</h1>
       <ul className="grid grid-cols-3 gap-4">
         {sortedPosts.map((post) => (
-          <Link to={post.slug}>
-            <li className="hover:underline" key={post.slug}>
-              {post.title}
-            </li>
+          <Link key={post.slug} to={post.slug}>
+            <li className="hover:underline">{post.title}</li>
           </Link>
         ))}
       </ul>

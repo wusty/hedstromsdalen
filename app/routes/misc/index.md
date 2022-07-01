@@ -6,6 +6,6 @@ meta:
   title: Misc
 ---
 
-## {attributes.title}
+# {attributes.title}
 
 Uppdaterat {attributes.date.toLocaleDateString()}
