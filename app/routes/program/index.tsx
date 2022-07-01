@@ -1,11 +1,19 @@
 import { json, LoaderFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 
+// ------- Lägg till alla nya poster här:
 import * as post1 from "./post-med-exempel.md";
 import * as post2 from "./why-capitalism-works.md";
 import * as post3 from "./capitalism-is-gret.md";
 import * as post4 from "./en-till-utstallning.md";
-// import * as postC from "./posts/c.md";
+
+// -------- Och här:
+const allPosts = [
+  postFromModule(post1),
+  postFromModule(post2),
+  postFromModule(post3),
+  postFromModule(post4),
+];
 
 export type Program = {
   slug: string;
@@ -27,12 +35,7 @@ export const loader: LoaderFunction = async ({ params }) => {
   // Referencing the posts here instead of in the Index component down below
   // lets us avoid bundling the actual posts themselves in the bundle for the
   // index page.
-  const allPosts = [
-    postFromModule(post1),
-    postFromModule(post2),
-    postFromModule(post3),
-    postFromModule(post4),
-  ];
+
   console.log("allPosts => ", allPosts);
   return json(allPosts);
 };
