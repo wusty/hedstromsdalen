@@ -46,7 +46,7 @@ export default function App() {
       </head>
       <body className="h-full">
         <NavBar />
-        <div className="container m-8 mx-auto max-w-4xl">
+        <div className="container m-8 sm:max-w-lg md:max-w-4xl	">
           <Outlet />
         </div>
         <ScrollRestoration />

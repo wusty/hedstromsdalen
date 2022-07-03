@@ -9,10 +9,10 @@ import * as post4 from "./en-till-utstallning.md";
 
 // -------- Och här:
 const allPosts = [
-  postFromModule(post1),
-  postFromModule(post2),
-  postFromModule(post3),
-  postFromModule(post4),
+  getPostData(post1),
+  getPostData(post2),
+  getPostData(post3),
+  getPostData(post4),
 ];
 
 export type Program = {
@@ -22,7 +22,7 @@ export type Program = {
   date: Date;
 };
 
-function postFromModule(mod: any) {
+function getPostData(mod: any) {
   return {
     slug: mod.filename.replace(/\.md$/, ""),
     title: mod.attributes.title,

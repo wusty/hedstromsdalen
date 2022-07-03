@@ -7,10 +7,10 @@ export const NavBar = () => {
   // TODO: handle window resizing: reset collapse values
   const [isCollapsed, setIsCollapsed] = useState(false);
   return (
-    <nav className="flex flex-wrap items-center justify-between bg-gray-500 p-6">
-      <div className="mr-6 flex flex-shrink-0 items-center text-white">
+    <nav className="flex flex-wrap items-center justify-between p-6">
+      <div className="mr-6 flex flex-shrink-0 items-center">
         <Link className="flex" to="/">
-          <svg
+          {/* <svg
             className="mr-2 h-8 w-8 fill-current"
             width="54"
             height="54"
@@ -18,13 +18,13 @@ export const NavBar = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-          </svg>
+          </svg> */}
           <span className="text-xl font-semibold tracking-tight">HNK</span>
         </Link>
       </div>
       <div className="block lg:hidden">
         <button
-          className="flex items-center rounded border border-gray-400 px-3 py-2 text-gray-200 hover:border-white hover:text-white"
+          className="hover:text-blue flex items-center rounded border border-gray-400 px-3 py-2 hover:border-white"
           onClick={() => setIsCollapsed(!isCollapsed)}
         >
           <svg
@@ -44,6 +44,7 @@ export const NavBar = () => {
             <NavBarLink name="Program" to="/program" />
             <NavBarLink name="Arkiv" to="/arkiv" />
             <NavBarLink name="Misc." to="/misc" />
+            <NavBarLink name="Medlemmar" to="/medlemmar" />
           </div>
           {/* TODO: Add when we need login stuff */}
           {/* <LoginOrSignUp /> */}
