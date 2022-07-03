@@ -40,10 +40,11 @@ export const NavBar = () => {
       {isCollapsed === false && (
         <div className="lg:pt-inherit block w-full flex-grow sm:flex sm:justify-between sm:pt-3 md:flex lg:flex lg:w-auto lg:items-center lg:pt-0">
           <div className="flex flex-col justify-around text-sm sm:flex-row lg:flex-grow ">
-            <NavBarLink name="Kontakt" to="/kontakt" />
+            <NavBarLink name="Om" to="/om" />
             <NavBarLink name="Program" to="/program" />
             <NavBarLink name="Arkiv" to="/arkiv" />
             <NavBarLink name="Misc." to="/misc" />
+            <NavBarLink name="Kontakt" to="/kontakt" />
             <NavBarLink name="Medlemmar" to="/medlemmar" />
           </div>
           {/* TODO: Add when we need login stuff */}
