@@ -6,6 +6,4 @@ meta:
   title: medlemmar
 ---
 
-# {attributes.title}
-
 Så här blir du medlem:

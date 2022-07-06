@@ -52,7 +52,7 @@ export default function Index() {
 
   return (
     <div className="container mx-auto">
-      <h1>Program</h1>
+      {/* <h1>Program</h1> */}
       <ul className="grid grid-cols-3 gap-4">
         {sortedPosts.map((post) => (
           <Link key={post.slug} to={post.slug}>
