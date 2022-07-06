@@ -46,8 +46,8 @@ export default function App() {
       </head>
       <body className="h-full">
         <NavBar />
-        <div className="container mb-48">
-          <div className="ml-48 max-w-sm sm:max-w-lg md:max-w-4xl">
+        <div className="container pt-20 pb-48">
+          <div className="ml-6 mr-6 max-w-sm sm:max-w-lg md:ml-12 md:mr-12 md:max-w-4xl lg:ml-48 lg:mr-48">
             <Outlet />
           </div>
         </div>
