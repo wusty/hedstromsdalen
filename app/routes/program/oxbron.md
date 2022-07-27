@@ -18,4 +18,4 @@ Begreppet heterotopia introducerades av Foucault i artikeln ”Des Espaces Autre
 
 Medverkande konstnärer: C.M Lundberg, Viktor Rosdahl, Ylva Westerlund, Elizabeth Peyton och Bas Jan Ader.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Utställningen är gjord med stöd av Region Västmanland och Skinnskattebergs Kommun.
+<p style={{textAlign: 'center'}}>Utställningen är gjord med stöd av Region Västmanland och Skinnskattebergs Kommun.</p>
