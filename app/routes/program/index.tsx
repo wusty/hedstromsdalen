@@ -2,17 +2,19 @@ import { json, LoaderFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 
 // ------- Lägg till alla nya poster här:
-import * as post1 from "./post-med-exempel.md";
-import * as post2 from "./why-capitalism-works.md";
-import * as post3 from "./capitalism-is-gret.md";
-import * as post4 from "./en-till-utstallning.md";
+import * as post1 from "./oxbron.md";
+// import * as post2 from "./why-capitalism-works.md";
+// import * as post3 from "./capitalism-is-gret.md";
+// import * as post4 from "./en-till-utstallning.md";
+import { marked } from "marked";
+import parseFrontMatter from "front-matter";
 
 // -------- Och här:
 const allPosts = [
   getPostData(post1),
-  getPostData(post2),
-  getPostData(post3),
-  getPostData(post4),
+  // getPostData(post2),
+  // getPostData(post3),
+  // getPostData(post4),
 ];
 
 export type Program = {
@@ -20,13 +22,19 @@ export type Program = {
   title: string;
   markdown: string;
   date: Date;
+  default: React.ReactNode;
 };
 
-function getPostData(mod: any) {
+function getPostData(importedPost: any): Program {
+  console.log("mod => ", importedPost);
   return {
-    slug: mod.filename.replace(/\.md$/, ""),
-    title: mod.attributes.title,
-    date: mod.attributes.date,
+    slug: importedPost.filename.replace(/\.md$/, ""),
+    title: importedPost.attributes.title,
+    date: importedPost.attributes.date,
+    default: importedPost.default(),
+    markdown: importedPost.markdown,
+
+    // test: parseFrontMatter(importedPost.toString()),
   };
 }
 
@@ -36,13 +44,13 @@ export const loader: LoaderFunction = async ({ params }) => {
   // lets us avoid bundling the actual posts themselves in the bundle for the
   // index page.
 
-  console.log("allPosts => ", allPosts);
   return json(allPosts);
 };
 
 export default function Index() {
   const posts: Program[] = useLoaderData();
 
+  console.log("posts => ", posts);
   // Sort posts by latest date
   const sortedPosts = posts.sort((a, b) => {
     const aDate = new Date(a.date);
@@ -57,6 +65,18 @@ export default function Index() {
         {sortedPosts.map((post) => (
           <Link key={post.slug} to={post.slug}>
             <li className="hover:underline">{post.title}</li>
+            {post?.default?.props?.children.map((c) => {
+              marked("asd");
+              // debugger;
+              if (c === "string") {
+                return null;
+              }
+
+              // return <>{c}</>;
+              // if (typeof c === "object") {
+              //   return <>{c}</>;
+              // }
+            })}
           </Link>
         ))}
       </ul>
