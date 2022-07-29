@@ -2,8 +2,9 @@ import { json, LoaderFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 
 // ------- Lägg till alla nya poster här:
-import * as post1 from "./oxbron.md";
-import * as post2 from "./samtal.md";
+import * as post1 from "./att-inventera.md";
+import * as post2 from "./byggnader-som-inte-ens-kan-bli-ruiner.md";
+import * as post3 from "./of-other-spaces.md";
 // import * as post2 from "./why-capitalism-works.md";
 // import * as post3 from "./capitalism-is-gret.md";
 // import * as post4 from "./en-till-utstallning.md";
@@ -14,7 +15,7 @@ import parseFrontMatter from "front-matter";
 const allPosts = [
   getPostData(post1),
   getPostData(post2),
-  // getPostData(post3),
+  getPostData(post3),
   // getPostData(post4),
 ];
 
