@@ -5,9 +5,8 @@ import { Link, useLoaderData } from "@remix-run/react";
 import * as post1 from "./att-inventera.md";
 import * as post2 from "./byggnader-som-inte-ens-kan-bli-ruiner.md";
 import * as post3 from "./of-other-spaces.md";
-// import * as post2 from "./why-capitalism-works.md";
-// import * as post3 from "./capitalism-is-gret.md";
-// import * as post4 from "./en-till-utstallning.md";
+import * as post4 from "./ett-huvud-pa-ett-silverfat.md";
+
 import { marked } from "marked";
 import parseFrontMatter from "front-matter";
 
@@ -16,6 +15,7 @@ const allPosts = [
   getPostData(post1),
   getPostData(post2),
   getPostData(post3),
+  getPostData(post4),
   // getPostData(post4),
 ];
 

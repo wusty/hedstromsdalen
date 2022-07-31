@@ -38,4 +38,4 @@ stödmedlemskapsavgift. Vi behöver uppgifterna så att vi kan kontakta våra st
 och berätta om föreningens verksamhet, påminna om möjlighet att förnya stödmedlemskapet,
 och för att kunna söka anslag/bidrag där anslagsgivaren begär att få se stödmedlemsregister.
 
-[TODO: LÄGG TILL BILD]
+![QR kod till swish](/img/QR.jpg)

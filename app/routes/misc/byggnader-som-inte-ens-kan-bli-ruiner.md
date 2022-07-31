@@ -22,3 +22,5 @@ Ordet "effektiv" är central här. Det är en byggnad som är designad för att 
 Det byggnaden representerar är ett dystopiskt nu. Här finns inget förflutet, ingen framtid. Följaktligen krävs det också distans för att uppfatta skönheten på den plats där lagerlokalen befinner sig. Förutsättningen är att inte vara där.
 
 Jens Soneryd
+
+![Byggnad](/img/byggnad.jpeg)
