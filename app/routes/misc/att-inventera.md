@@ -1,6 +1,7 @@
 ---
 title: Att inventera
 date: 2022-06-29
+preview: Att inventera har flera betydelser. En som kanske inte är den första vi tänker på, är att finna, hitta på, och att skapa...
 ---
 
 # Att inventera

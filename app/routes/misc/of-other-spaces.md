@@ -1,6 +1,7 @@
 ---
 title: Of Other Spaces (1967)
 date: 2022-06-29
+preview: This text, entitled “Des Espace Autres,” and published by the French journal Architecture /Mouvement/ Continuité in October, 1984, was the basis of a lecture given by Michel Foucault in March 1967...
 ---
 
 # Of Other Spaces (1967), Heterotopias

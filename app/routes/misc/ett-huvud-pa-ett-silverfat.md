@@ -1,6 +1,7 @@
 ---
 title: Ett huvud på ett silverfat
 date: 2022-07-31
+preview: Inför ”Salome dansar för kung Herodes”, Georges Rochegrosse's målning från 1887 som skildrar den våldsamma upplösningen av Johannes döparens död så som det återberättas...
 ---
 
 # Ett huvud på ett silverfat.

@@ -1,6 +1,7 @@
 ---
 title: Byggnader som inte ens kan bli ruiner
 date: 2022-06-29
+preview: ”Naturligt mineralvatten från Guttsta källa i Hedströmsdalen” - Så lyder texten på det vatten som Ica säljer under sitt eget varumärke...
 ---
 
 # Byggnader som inte ens kan bli ruiner.

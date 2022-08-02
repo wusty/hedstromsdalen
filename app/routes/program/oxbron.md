@@ -16,6 +16,6 @@ Med den här utställningen önskar vi aktivera huset, som utställningsrum för
 
 Begreppet heterotopia introducerades av Foucault i artikeln ”Des Espaces Autres” (andra platser). Han använder termen för att beskriva icke-hegemoniska platser och förhållanden som existerar – eller verkar – både fysiskt och mentalt på samma gång och där många lager av mening samexisterar.
 
-Medverkande konstnärer: C.M Lundberg, Viktor Rosdahl, Ylva Westerlund, Elizabeth Peyton och Bas Jan Ader.
+Medverkande konstnärer: C.M Lundberg, Viktor Rosdahl, Ylva Westerlund, Elizabeth Peyton, Bas Jan Ader och Mats Adelman.
 
 <p style={{textAlign: 'center', paddingTop: '2rem'}}>Utställningen är gjord med stöd av Region Västmanland och Skinnskattebergs Kommun.</p>

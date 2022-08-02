@@ -25,6 +25,7 @@ export type Program = {
   markdown: string;
   date: Date;
   default: React.ReactNode;
+  preview?: string;
 };
 
 function getPostData(importedPost: any): Program {
@@ -34,8 +35,8 @@ function getPostData(importedPost: any): Program {
     title: importedPost.attributes.title,
     date: importedPost.attributes.date,
     default: importedPost.default(),
-    markdown: importedPost.markdown,
-
+    markdown: importedPost,
+    preview: importedPost.attributes.preview,
     // test: parseFrontMatter(importedPost.toString()),
   };
 }
@@ -59,25 +60,25 @@ export default function Index() {
     const bDate = new Date(b.date);
     return bDate.getTime() - aDate.getTime();
   });
-
+  console.log(posts);
   return (
     <div className="container mx-auto">
       {/* <h1>Program</h1> */}
       <ul className="flex grid-cols-3 flex-col gap-4">
         {sortedPosts.map((post) => (
-          <Link key={post.slug} to={post.slug}>
-            <li className="hover:underline">{post.title}</li>
-            {post?.default?.props?.children.map((c) => {
-              if (c === "string") {
-                return null;
-              }
-
-              // return <>{c}</>;
-              // if (typeof c === "object") {
-              //   return <>{c}</>;
-              // }
-            })}
-          </Link>
+          <li key={post.slug}>
+            <Link to={post.slug}>
+              <span className="font-semibold">{post.title}</span>
+            </Link>
+            {post.preview && (
+              <p className="italic">
+                {post.preview} &nbsp;
+                <Link className="text-slate-900" to={post.slug}>
+                  Läs mer
+                </Link>
+              </p>
+            )}
+          </li>
         ))}
       </ul>
     </div>
