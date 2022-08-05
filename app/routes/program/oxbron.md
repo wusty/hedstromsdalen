@@ -10,6 +10,8 @@ _PMFV+QQ Tomasbo_<br/>
 _Utställningsperiod: 12 augusti – 10 september_<br/>
 _Öppettider: torsdag-lördag 12-18_
 
+![Scheele](/img/IMG_4744.jpg)
+
 Banvaktarstugan vid Oxbron utgjorde vid uppförandet 1904 en viktig nod i transporten av järnmalm från bruken längs hedströmsdalen till hamnen i Köping. Under en renovering i samarbete med kommunen och länsstyrelsen återställdes den för ett par år sedan till sin ursprungliga form och ingår numera i ekomuseum Bergslagen.
 
 Med den här utställningen önskar vi aktivera huset, som utställningsrum för att förvandla det till en aktör i en större diskussion, där vi vill belysa platsers föränderliga identitet, historia och möjliga framtider genom introduktionen av ett antal konstnärskap som på olika vis arbetar med betingelserna för mänsklig existens.
