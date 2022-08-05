@@ -6,6 +6,7 @@ import * as post1 from "./att-inventera.md";
 import * as post2 from "./byggnader-som-inte-ens-kan-bli-ruiner.md";
 import * as post3 from "./of-other-spaces.md";
 import * as post4 from "./ett-huvud-pa-ett-silverfat.md";
+import * as post5 from "./karlstroms-i-oxbron.md";
 
 import { marked } from "marked";
 import parseFrontMatter from "front-matter";
@@ -16,6 +17,7 @@ const allPosts = [
   getPostData(post2),
   getPostData(post3),
   getPostData(post4),
+  getPostData(post5),
   // getPostData(post4),
 ];
 
@@ -71,7 +73,7 @@ export default function Index() {
               <span className="font-semibold">{post.title}</span>
             </Link>
             {post.preview && (
-              <p className="italic">
+              <p className="max-w-lg italic text-gray-600">
                 {post.preview} &nbsp;
                 <Link className="text-slate-900" to={post.slug}>
                   Läs mer

@@ -8,7 +8,13 @@ preview: Inför ”Salome dansar för kung Herodes”, Georges Rochegrosse's må
 
 (reflektion över konstnärsrollen)
 
+<br/>
+
+![Ett huvud på ett silverfat](/img/salome.jpeg)
+
 _”Dance for me, Salome and whatsoever thou shalt ask for me I will give it thee, even into the half of my kingdom”_
+
+<br/>
 
 Inför ”Salome dansar för kung Herodes”, Georges Rochegrosse's målning från 1887 som skildrar den våldsamma upplösningen av Johannes döparens död så som det återberättas i nya testamentet tycks det klart att det ibland endast är i ljuset av en ikonisk historisk händelse som kan samtidens villkor framträder i all sin enkla klarhet.
 
@@ -21,5 +27,3 @@ Till skillnad mot Gustave Moreau, Delacroix, Titian, Hans Memling och andra som 
 Just porträttet av musikerna, tvingade att uppträda i en förnedrande position på golvet och deras till synes passiva deltagande i den blodiga uppgörelse som just slutits är mycket intressant genom att det tillför en analys av makt och en blick på det sociala kontrakt konstnärer alltid tvingats förhålla sig till.
 
 Harpisten i det nedre högre hörnet av bilden med sitt hårband delar sannolikt inte Salomes blodtörst och önskan om dekapitering men han har inget annat val än att spela sin roll, konstnärens roll. Rochegrosse synliggör ett prekärt dillemma som obrutet fortplantats sedan Herodes dynasti för att inkorporeras i en hierarkisk dynamik under vilken alla konstnärer fortfarande är förtryckta. Samlare kräver avkastning på sina investeringar, konstens beskyddare kräver social status, diktatorer kräver tillfredställande propaganda, kritiker kräver diskurs och till sist publiken som kräver underhållning. Oavsett kontext är konstnären alltid en ensam röst i en systemupprätthållande kör.
-
-![Ett huvud på ett silverfat](/img/salome.jpeg)

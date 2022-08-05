@@ -18,4 +18,14 @@ Begreppet heterotopia introducerades av Foucault i artikeln ”Des Espaces Autre
 
 Medverkande konstnärer: C.M Lundberg, Viktor Rosdahl, Ylva Westerlund, Elizabeth Peyton, Bas Jan Ader och Mats Adelman.
 
+[C.M Lundberg instagram](http://instagram.com/cm_lundberg/)
+
+[viktorrosdahl.se](http://viktorrosdahl.se)
+
+[ylvawesterlund.blogspot.com](https://ylvawesterlund.blogspot.com)
+
+[matsadelman.blogspot.com](https://matsadelman.blogspot.com)
+
+_(I utställningen visas också filmen Udda smalspår och tung industri)_
+
 <p style={{textAlign: 'center', paddingTop: '2rem'}}>Utställningen är gjord med stöd av Region Västmanland och Skinnskattebergs Kommun.</p>

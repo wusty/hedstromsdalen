@@ -22,6 +22,8 @@ Du kan sätta in ett valfritt belopp på bankgiro-nummer 802538-2709 eller swish
 
 Om du inte uppger namn och epost-adress så spar vi inga uppgifter om dig i medlemsregistret.
 
+![QR kod till swish](/img/QR.png)
+
 ## Villkor
 
 HNK för register över sina stödmedlemmar. När du blir stödmedlem (vilket du blir när du
@@ -37,5 +39,3 @@ personuppgifter. De personuppgifter vi hanterar är: namn, epostadress och datum
 stödmedlemskapsavgift. Vi behöver uppgifterna så att vi kan kontakta våra stödmedlemmar
 och berätta om föreningens verksamhet, påminna om möjlighet att förnya stödmedlemskapet,
 och för att kunna söka anslag/bidrag där anslagsgivaren begär att få se stödmedlemsregister.
-
-![QR kod till swish](/img/QR.jpg)

@@ -15,5 +15,3 @@ Tallar kan räknas och värderas utifrån hur mycket virke som kan utvinnas. De 
 En annan betydelse av att inventera, som enligt svenska akademins ordbok inte längre är i bruk, är att överlämna. Vad återstår när inventeringen är klar och till vem kan vi återlämna det som är av värde? De arter och miljöer som inte räknas i ett sammanhang kan vara livsavgörande i andra. Vilka värden har oåterkalleligt förlorats och vilka kan vi återskapa?
 
 Att inventera är att uppfinna, återfinna och att överlämna. Att inventera kan handla om att upptäcka en värld som vi trodde att vi kände, men som kan visa sig på nytt, i ljuset av det som varit – det som räknats och det som räknats bort –och det som kan bli, när det som hittills är oräknat synliggörs och kräver upprättelse. Vad finns här? För vem? Hur många är vi? Innan vi börjar räkna måste vi veta hur många vi är som har rätt att avgöra vad som är värdefullt.
-
-Linda Soneryd

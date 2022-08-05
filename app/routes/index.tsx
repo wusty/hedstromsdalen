@@ -1,8 +1,9 @@
 import { NavBar } from "~/components/NavBar";
+import hapsash_idea from "public/img/hapsash_idea.png";
 
 export default function Index() {
   return (
-    <></>
+    <img src={hapsash_idea} />
     // <NavBar />
     // <Info user={user} />
   );
