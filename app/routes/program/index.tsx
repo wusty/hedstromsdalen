@@ -2,11 +2,11 @@ import { json, LoaderFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 
 // ------- Lägg till alla nya poster här:
-import * as post1 from "./oxbron.md";
-// import * as post2 from "./samtal.md";
-// import * as post2 from "./why-capitalism-works.md";
-// import * as post3 from "./capitalism-is-gret.md";
-// import * as post4 from "./en-till-utstallning.md";
+import * as post1 from "./oxbron.mdx";
+// import * as post2 from "./samtal.mdx";
+// import * as post2 from "./why-capitalism-works.mdx";
+// import * as post3 from "./capitalism-is-gret.mdx";
+// import * as post4 from "./en-till-utstallning.mdx";
 import { marked } from "marked";
 import parseFrontMatter from "front-matter";
 
@@ -28,7 +28,7 @@ export type Program = {
 
 function getPostData(importedPost: any): Program {
   return {
-    slug: importedPost.filename.replace(/\.md$/, ""),
+    slug: importedPost.filename.replace(/\.mdx$/, ""),
     title: importedPost.attributes.title,
     date: importedPost.attributes.date,
     default: importedPost.default(),

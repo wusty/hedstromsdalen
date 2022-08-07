@@ -30,7 +30,7 @@ export async function getAllaProgram() {
       );
 
       return {
-        slug: filename.replace(/\.md$/, ""),
+        slug: filename.replace(/\.mdx$/, ""),
         title: attributes.title,
         date: attributes.date,
       };
