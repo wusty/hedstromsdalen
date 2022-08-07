@@ -31,7 +31,6 @@ export type Program = {
 };
 
 function getPostData(importedPost: any): Program {
-  console.log("mod => ", importedPost);
   return {
     slug: importedPost.filename.replace(/\.md$/, ""),
     title: importedPost.attributes.title,
