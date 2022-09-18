@@ -42,7 +42,7 @@ export const NavBar = () => {
           <div className="flex flex-col justify-around text-sm sm:flex-row lg:flex-grow ">
             <NavBarLink name="Om" to="/om" />
             <NavBarLink name="Program" to="/program" />
-            {/* <NavBarLink name="Arkiv" to="/arkiv" /> */}
+            <NavBarLink name="Arkiv" to="/arkiv" />
             <NavBarLink name="Misc." to="/misc" />
             <NavBarLink name="Kontakt" to="/kontakt" />
             <NavBarLink name="HNK:s vänner" to="/hnks-vanner" />
