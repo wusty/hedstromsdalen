@@ -3,7 +3,7 @@ import { Link, useLoaderData } from "@remix-run/react";
 
 // ------- Lägg till alla nya poster här:
 import * as post1 from "./odling-1.mdx";
-// import * as post2 from "./kolhuset.mdx";
+import * as post2 from "./narmsta-nyckelbiotop.mdx";
 // import * as post2 from "./why-capitalism-works.mdx";
 // import * as post3 from "./capitalism-is-gret.mdx";
 // import * as post4 from "./en-till-utstallning.mdx";
@@ -13,7 +13,7 @@ import parseFrontMatter from "front-matter";
 // -------- Och här:
 const allPosts: Program[] = [
   getPostData(post1),
-  // getPostData(post2),
+  getPostData(post2),
   // getPostData(post3),
   // getPostData(post4),
 ];
