@@ -67,6 +67,7 @@ Not a fan of bits of the stack? Fork it, change it, and use `npx create-remix --
 - Start dev server:
 
   ```sh
+  nvm use
   npm run dev
   ```
 
