@@ -9,7 +9,7 @@ export const NavBar = () => {
   return (
     <nav className="flex flex-wrap items-center justify-between p-6">
       <div className="mr-6 flex flex-shrink-0 items-center">
-        <Link className="flex" to="/">
+        <Link className="flex" to="/aktuellt">
           {/* <svg
             className="mr-2 h-8 w-8 fill-current"
             width="54"
