@@ -1,6 +1,5 @@
 import { json, LoaderFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
-import hapsash_idea from "public/img/hapsash_idea.png";
 
 // ------- Lägg till alla nya poster här:
 import * as post1 from "./odling-1.mdx";
@@ -79,8 +78,6 @@ export default function Index() {
           </Link>
         ))}
       </ul>
-
-      <img src={hapsash_idea} alt="HNK:s logotyp" />
     </div>
   );
 }
