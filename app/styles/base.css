@@ -31,6 +31,10 @@ a:hover {
   text-decoration: underline;
 }
 
+img {
+  height: 100%;
+}
+
 /* blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
