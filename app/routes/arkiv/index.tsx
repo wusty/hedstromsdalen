@@ -6,6 +6,7 @@ import * as post1 from "./oxbron.mdx";
 import * as post2 from "./kolhuset.mdx";
 
 import * as post3 from "./kameler-dricker-vatten.mdx";
+import * as post4 from "./den-lille-traeudstilling.mdx";
 // import * as post2 from "./why-capitalism-works.mdx";
 // import * as post3 from "./capitalism-is-gret.mdx";
 // import * as post4 from "./en-till-utstallning.mdx";
@@ -18,7 +19,7 @@ const allPosts = [
   getPostData(post2),
   getPostData(post3),
   // getPostData(post3),
-  // getPostData(post4),
+  getPostData(post4),
 ];
 
 export type Program = {
