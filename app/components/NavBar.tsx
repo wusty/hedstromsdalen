@@ -29,6 +29,7 @@ export const NavBar = () => {
             <NavBarLink name="Om" to="/om" />
             <NavBarLink name="Aktuellt" to="/aktuellt" />
             <NavBarLink name="Arkiv" to="/arkiv" />
+            <NavBarLink name="Odlingskooperativ" to="/odlingskooperativ" />
             <NavBarLink name="Misc." to="/misc" />
             <NavBarLink name="Kontakt" to="/kontakt" />
             <NavBarLink name="HNK:s vänner" to="/hnks-vanner" />
