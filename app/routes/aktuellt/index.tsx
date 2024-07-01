@@ -4,6 +4,7 @@ import { Link, useLoaderData } from "@remix-run/react";
 // ------- Lägg till alla nya poster här:
 import * as post2 from "./narmsta-nyckelbiotop.mdx";
 import * as post3 from './tillitskiosk.mdx';
+import * as post4 from './talet-sangen-texten.mdx';
 
 import { marked } from "marked";
 import parseFrontMatter from "front-matter";
@@ -12,6 +13,7 @@ import parseFrontMatter from "front-matter";
 const allPosts: Program[] = [
   getPostData(post2),
   getPostData(post3),
+  getPostData(post4),
 ];
 
 export type Program = {
@@ -61,6 +63,9 @@ export default function Index() {
         {sortedPosts.map((post) => (
           <Link key={post.slug} to={post.slug}>
             <li className="hover:underline">{post.title}</li>
+            {/* 
+            
+            
             {post?.default?.props?.children.map((c) => {
               if (c === "string") {
                 return null;
@@ -71,6 +76,7 @@ export default function Index() {
               //   return <>{c}</>;
               // }
             })}
+              */}
           </Link>
         ))}
       </ul>
