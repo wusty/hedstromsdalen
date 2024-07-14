@@ -9,9 +9,7 @@ import * as post3 from "./kameler-dricker-vatten.mdx";
 import * as post4 from "./den-lille-traeudstilling.mdx";
 import * as post5 from "./odling-1.mdx";
 import * as post6 from "./pauliina-pollanen.mdx";
-// import * as post2 from "./why-capitalism-works.mdx";
-// import * as post3 from "./capitalism-is-gret.mdx";
-// import * as post4 from "./en-till-utstallning.mdx";
+import * as post7 from "./talet-sangen-texten.mdx";
 import { marked } from "marked";
 import parseFrontMatter from "front-matter";
 
@@ -20,10 +18,10 @@ const allPosts = [
   getPostData(post1),
   getPostData(post2),
   getPostData(post3),
-  // getPostData(post3),
   getPostData(post4),
   getPostData(post5),
   getPostData(post6),
+  getPostData(post7),
 ];
 
 export type Program = {
