@@ -3,7 +3,7 @@ import { Link, useLoaderData } from "@remix-run/react";
 
 // ------- Lägg till alla nya poster här:
 import * as post2 from "./narmsta-nyckelbiotop.mdx";
-import * as post3 from './tillitskiosk.mdx';
+// import * as post3 from './tillitskiosk.mdx';
 
 import { marked } from "marked";
 import parseFrontMatter from "front-matter";
@@ -11,7 +11,7 @@ import parseFrontMatter from "front-matter";
 // -------- Och här:
 const allPosts: Program[] = [
   getPostData(post2),
-  getPostData(post3),
+  // getPostData(post3),
 ];
 
 export type Program = {

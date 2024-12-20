@@ -10,6 +10,8 @@ import * as post4 from "./den-lille-traeudstilling.mdx";
 import * as post5 from "./odling-1.mdx";
 import * as post6 from "./pauliina-pollanen.mdx";
 import * as post7 from "./talet-sangen-texten.mdx";
+import * as post8 from './tillitskiosk.mdx';
+
 import { marked } from "marked";
 import parseFrontMatter from "front-matter";
 
@@ -22,6 +24,7 @@ const allPosts = [
   getPostData(post5),
   getPostData(post6),
   getPostData(post7),
+  getPostData(post8),
 ];
 
 export type Program = {
