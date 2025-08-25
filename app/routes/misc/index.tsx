@@ -7,6 +7,7 @@ import * as post2 from "./byggnader-som-inte-ens-kan-bli-ruiner.mdx";
 import * as post3 from "./of-other-spaces.mdx";
 import * as post4 from "./ett-huvud-pa-ett-silverfat.mdx";
 import * as post5 from "./karlstroms-i-oxbron.mdx";
+import * as post6 from "./narmsta-nyckelbiotop.mdx";
 
 import { marked } from "marked";
 import parseFrontMatter from "front-matter";
@@ -18,6 +19,7 @@ const allPosts = [
   getPostData(post3),
   getPostData(post4),
   getPostData(post5),
+  getPostData(post6),
   // getPostData(post4),
 ];
 

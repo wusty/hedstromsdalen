@@ -11,6 +11,7 @@ import * as post5 from "./odling-1.mdx";
 import * as post6 from "./pauliina-pollanen.mdx";
 import * as post7 from "./talet-sangen-texten.mdx";
 import * as post8 from './tillitskiosk.mdx';
+import * as post9 from './karma-karmansbo.mdx';
 
 import { marked } from "marked";
 import parseFrontMatter from "front-matter";
@@ -25,6 +26,7 @@ const allPosts = [
   getPostData(post6),
   getPostData(post7),
   getPostData(post8),
+  getPostData(post9),
 ];
 
 export type Program = {

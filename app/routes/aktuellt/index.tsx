@@ -2,9 +2,11 @@ import { json, LoaderFunction } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 
 // ------- Lägg till alla nya poster här:
-import * as post2 from "./narmsta-nyckelbiotop.mdx";
-import * as post1 from "./karma-karmansbo.mdx";
+// import * as post2 from "./narmsta-nyckelbiotop.mdx";
+// import * as post1 from "./karma-karmansbo.mdx";
 // import * as post3 from './tillitskiosk.mdx';
+import * as post1 from './moon-half-glass-full-to-the-brim.mdx'
+import * as post2 from './samla-skog.mdx'
 
 import { marked } from "marked";
 import parseFrontMatter from "front-matter";
