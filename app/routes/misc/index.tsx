@@ -9,6 +9,7 @@ import * as post4 from "./ett-huvud-pa-ett-silverfat.mdx";
 import * as post5 from "./karlstroms-i-oxbron.mdx";
 import * as post6 from "./narmsta-nyckelbiotop.mdx";
 import * as post7 from "./samla-skog-samla-namn.mdx";
+import * as post8 from "./samla-skog-samla-vittnesmal.mdx";
 
 import { marked } from "marked";
 import parseFrontMatter from "front-matter";
@@ -22,6 +23,7 @@ const allPosts = [
   getPostData(post5),
   getPostData(post6),
   getPostData(post7),
+  getPostData(post8),
   // getPostData(post4),
 ];
 
